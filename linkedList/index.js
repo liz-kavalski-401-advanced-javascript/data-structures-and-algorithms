@@ -12,22 +12,43 @@ class LinkedList {
     this.head = null;
     this.tail = null;
   }
+  //place a node at the end (tail)
+  append(value) {
+    if(!this.head) {
+      this.head = new Node(value);
+      return;
+    }
 
-  insert(value) {
-  this.head = new Node(value,this.head);
-  }
-  includes(value) {
     let current = this.head;
-    while(current) {
-      if(current.value === value){
-        return true;
-      };
+    while(current.next) {
       current = current.next;
-    };
+    }
 
     current.next = new Node(value);
     this.tail = current.next;
 
+  }
+  //place a value at the head of the linked list
+  insert(value) {
+  let current = new Node(value);
+  current.next = this.head;
+  this.head =current;
+  }
+  //look for the value
+  includes(value) {
+    if (!this.head){
+      return false};
+    let current = this.head;
+    while(current.next) {
+      if(current.next === value){
+        return true;
+      };
+      current = current.next;
+    };
+    if(current.value === value){
+      return true;
+    }
+    return false;
   };
 };
 
