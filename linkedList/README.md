@@ -1,6 +1,9 @@
   # Singly Linked List
 We created a list class and extended it by giving it several methods for users to add new entries and search through it. You can add before or after a particular node or at the beginning or end of the entire list.
 
+## Link
+[PR Reqest for fromTheEnd](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/pull/3)
+
 ## Challenge
 Create a Node class with a `head`property, stores values, and a property that points to the next node.
 Define the following methods:
