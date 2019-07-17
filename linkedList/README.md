@@ -20,7 +20,9 @@ Define the following methods:
 
 * `insertAfter` - inserts entry after target node
 
+
 * `fromTheEnd` - find the 'k'th node from the end(k repersent a givin input)
+
 
 ## Approach & Efficiency
 In order to create our methods we decided to iterate over the lists with a while loop. For insert and append we really only need to identify head or tail but for anything on the interior, because of the relational nature between nodes in linked lists, we have to traverse to touch any/all values.
@@ -32,5 +34,7 @@ I *think* the Big O for before and after a target is going to be O(n) as you cou
 ## UML
 ![alt text](https://github.com/401-advanced-javascript-aimurphy/data-structures-and-algorithms/blob/master/code-challenges/401/Data-Structures/linkedList/appendbeforeafter.jpg "whiteboarding")
 
+
 ## UML 
 ![alt text](https://github.com/liz-kavalski-401-advanced-javascript/pictures/blob/master/images/7_11_19%2C%206_34%20PM%20Office%20Lens.jpg)
+
