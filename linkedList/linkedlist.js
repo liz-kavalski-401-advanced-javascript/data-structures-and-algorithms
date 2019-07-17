@@ -51,6 +51,38 @@ class LinkedList {
     }
     return false;
   };
+  insertBefore(value, target){
+    if(!this.head){
+      this.head = new Node(value);
+      return;
+    }
+    let current = this.head;
+
+    while(current.next.value!==target){
+      current = current.next;
+    }
+
+    let newNode = new Node(value);
+    newNode.next = current.next;
+    current.next = newNode;
+
+  }
+
+  insertAfter(value, target){
+    if(!this.head){
+      this.head = new Node(value);
+      return;
+    }
+    let current = this.head;
+
+    while(current.value!==target){
+      current = current.next;
+    }
+
+    let newNode = new Node(value);
+    newNode.next = current.next;
+    current.next = newNode;
+  }
   print(){
     let current =this.head;
     let strArray=[];
@@ -85,10 +117,36 @@ class LinkedList {
       }
       console.log(current.value)
   }
-  //instertBefore(value, newVal){
-    //if(this.head.value === value)
-//   }
-// insertAfter(value,newVal)
+  mergeLinkedLists(L1, L2) {
+    let L3 = new LinkedList();
+    let currentL1Node = L1.head;
+    // console.log(currentL1Node);
+    let currentL2Node = L2.head;
+    // console.log(currentL2Node);
+    while (currentL1Node || currentL2Node) {
+      if (currentL1Node.value <= currentL2Node.value) {
+        L3.insert(currentL1Node.value);
+        currentL1Node = currentL1Node.next;
+        console.log(currentL1Node);
+      }
+      else {
+        L3.insert(currentL2Node);
+        currentL2Node = currentL2Node.next;
+        console.log(currentL2Node.value);
+      }
+    }
+    while (currentL1Node) {
+      L3.insert(currentL1Node);
+      currentL1Node = currentL1Node.next;
+    }
+    while (currentL2Node) {
+      L3.insert(currentL2Node);
+      currentL2Node = currentL2Node.next;
+    }
+    
+    return L3;
+  }
+
   
 };
 
@@ -97,13 +155,20 @@ class LinkedList {
 
 
 module.exports = LinkedList;
-// let list = new LinkedList();
-// list.append('cat');
-// list.append (2);
-// list.append(4);
-// list.insert('pizza');
-// list.insert('dog');
-// list.formTheEnd(2)
+
+let list1 = new LinkedList();
+let list2= new LinkedList();
+let list3 = new LinkedList();
+ list1.append('cat');
+ list1.append('dog');
+// list1.append(4);
+
+ list2.append (2);
+ list2.append('pizza');
+ //list2.append(1);
+
+console.log(list3.mergeLinkedLists(list1,list2));
+ //list.formTheEnd(2)
 // //console.log(list.includes('dog'));
 // console.log(list.print());
 // //console.log(list);
