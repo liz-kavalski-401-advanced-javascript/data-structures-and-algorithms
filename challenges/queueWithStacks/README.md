@@ -1,6 +1,6 @@
 # Challenge Summary
  Build a Queue with two stacks.
- [PR Request](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/pull/6)
+ [PR Request](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/pull/6)-to checklist
 ## Challenge Description
 Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface: enqueue(value) and dequeue(), but will internally only utilize 2 Stack objects. 
 
