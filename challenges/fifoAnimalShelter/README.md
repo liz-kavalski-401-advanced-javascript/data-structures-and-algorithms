@@ -6,6 +6,7 @@ Create a class called AnimalShelter which holds only dogs and cats. The shelter 
 
 ## Approach & Efficiency
 I made them into arrays and used the arrary methods `shift` and `unshift` to add or remove the frist element of the array.
-
+#### links
+[PR request](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/pull/7)
 ## Solution
 <!-- Embedded whiteboard image -->
