@@ -1,5 +1,7 @@
 'use strict';
 
+import { ModuleMap } from "jest-haste-map";
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -66,3 +68,5 @@ console.log(myStacks.peek(), 'this peek');
 // myQu.enqueue('dog')
 // console.log(myQu.dequeue(), 'this is dequeue');
 // console.log(myQu.peek(), 'this is peek');
+
+module.export = stacksAndQueues;
