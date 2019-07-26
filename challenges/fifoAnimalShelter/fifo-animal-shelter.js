@@ -1,31 +1,59 @@
-const stacks = require('../../stacksAndQueues/stacks-and-queues.js')
+const Queue = require('../../stacksAndQueues/stacks-and-queues.js')
 
 class AnimalShelter{
   constructor() {
-      this.an1 = new Stack;
-      this.an2= new Stack;
+      this.cat = new Queue;
+      this.dog= new Queue;
       //if the the require and export dose not work
-      // this.top = null;
-      // this.bottom = null;
-      // this.an1= [];
-      // this.an2= [];
+      // this.front = null;
+      // this.rear = null;
+      // this.cat= [];
+      // this.dog= [];
 
   }
-  enqueue(value){
-    this.an1.unshift(value);
-    return this.an1
+  enqueue(animal){
+    if(animal === 'cat'){
+      this.cat.push(animal);
+      return this.cat
     }
-  dequeue(){
-    if (this.an2.length === 0) {
-      if(this.an1.length === 0) { return 'Cannot dequeue because queue is empty'; }
-    while (this.an1.length > 0) {
-     let value = this.an1.shift();
-        this.top = this.an1[this.an1.length-1];
-        return value;
+    if( animal === 'dog'){
+      this.dog.push(animal);
+      return this.dog
+    }
+   }
+
+
+  dequeue(pref){
+    if (pref !== 'cat' || pref !== 'dog'){
+      return null
+    } 
+    if(pref === 'cat'){
+     let pref = this.cat.shift();
+        this.front = this.cat
+        this.cat.shift();
+        return this.cat
+    }
+    if(pref === 'dog'){
+      let pref = this.dog.shift();
+        this.front = this.dog
+        this.dog.shift();
+        return this.dog
     }
   }
-  return this.an2.pop();
-      }
     
       
 }
+let animalList = new AnimalShelter
+animalList.enqueue('cat')
+animalList.enqueue('cat')
+animalList.enqueue('cat')
+
+animalList.enqueue('dog')
+animalList.enqueue('dog')
+animalList.enqueue('dog')
+
+animalList.dequeue('cat')
+animalList.dequeue('dog')
+console.log(animalList.cat)
+console.log(animalList.dog)
+console.log(animalList)
