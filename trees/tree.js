@@ -1,4 +1,4 @@
-import { newExpression } from "@babel/types";
+//import { newExpression } from "@babel/types";
 
 class Node{
     constructor(){
@@ -66,12 +66,12 @@ class Node{
           this.root = root
       
         };
-    }
+    };
     add(value){
+      let current = this.root
         if(this.root = null){
             this.root = new Node(value);
         }
-        let current = this.root
         while(current){
             if(current.value < value ){
                 this.current.right = new Node(value);
@@ -88,7 +88,7 @@ class Node{
         if(this.root === value){
             return true;
         }
-        else if(root.value > value){
+        if(root.value > value){
             return this.contains(value,current.left);
         } else{
             return this.contains(value, current.right)
