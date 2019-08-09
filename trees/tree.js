@@ -66,7 +66,7 @@ class Node{
           this.root = root
       
         };
-    };
+  
     add(value){
       let current = this.root
         if(this.root = null){
@@ -80,7 +80,7 @@ class Node{
                 this.current.left = new Node(value);
             }
         }
-    };
+    }
     contains(value){
         if(this.root === null){
             return false
@@ -95,3 +95,4 @@ class Node{
         }
 
     };
+  }
