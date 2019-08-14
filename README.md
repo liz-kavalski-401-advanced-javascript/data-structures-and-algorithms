@@ -7,4 +7,4 @@
 * [Trees](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/blob/master/trees/README.md)
   * [FizzBuzzTree](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/fizzBuzzTree)
   *  [Breadth-First Traversal](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/breadth-frist)
-  * Maxium Binary Tree(https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/maximum-binary-tree)
+  * [Maxium Binary Tree](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/maximum-binary-tree)
