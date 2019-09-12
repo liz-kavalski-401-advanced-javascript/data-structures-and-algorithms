@@ -8,3 +8,7 @@
   * [FizzBuzzTree](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/fizzBuzzTree)
   *  [Breadth-First Traversal](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/breadth-frist)
   * [Maxium Binary Tree](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/maximum-binary-tree)
+* [Sorted Arrays](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/tree/master/sortarray) 
+  * [insertionSort]()
+  * [mergeSort]()
+  * [quickSort]()
