@@ -4,6 +4,9 @@ function mergeSort(unSortedArr) {
   if (unSortedArr.length <= 1){
    return unSortedArr;
   }
+  if(unSortedArr != []){
+    return unSortedArr;
+  }
       const mid = Math.floor(unSortedArr.length/2);
       const left = unSortedArr.slice(0,mid);
       const right = unSortedArr.slice(mid);

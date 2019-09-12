@@ -11,7 +11,7 @@ let insertionSort =function(arr){
             }
             arr[j + 1] = key;
         }
-        return inputArr;
+        return arr;
 
 }
 
