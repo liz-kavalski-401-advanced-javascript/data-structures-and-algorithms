@@ -32,4 +32,4 @@ function mergeSort(unSortedArr) {
             .concat(right.slice(rightIdx));
   }
   
-  console.log(mergeSort([3,8,6,8,2]))
+  console.log(mergeSort([3,8,6,8,-2]))
