@@ -7,7 +7,7 @@ Today we will be gaining a better understanding of Insertion Sort. This include 
 The term Insertion Sort is use to descride a way to sort an array. Their are different way to sort arrarys. In case the the array is being sorted like cards. Imgine playing "goldfish" with some friends and just been delt seven random cards. In most case people delt cards will sort the cards by numnic value one at a time to help see which cards they have matchs for easier. Which is simaliar on how Insertion Sort.  Below is a diagram of how showing how works.
 
 ## Diagram 
-![InsertionSort](insertionSort.png)
+![InsertionSort](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/blob/master/sortarray/insertionSort/insertionsort.png)
 
 ## How dose it work?
 The way Insertion Sort work is as it gose through the array, it compare the current value to the pervious value. If the current number is higher then the pervious number then that number moves up. If the current number is lower then the pervious number then the number is moved towards the lower end of the array. 
