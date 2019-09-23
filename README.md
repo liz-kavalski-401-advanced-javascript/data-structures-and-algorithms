@@ -12,3 +12,4 @@
   * [insertionSort](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/blob/master/sortarray/insertionSort/BLOG.md)
   * [mergeSort](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/blob/master/sortarray/mergeSort/BLOG.md)
   * [quickSort](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/blob/master/sortarray/quickSort/BLOG.md)
+*  [Hashtable](https://github.com/liz-kavalski-401-advanced-javascript/data-structures-and-algorithms/blob/master/hashtable/README.md)
